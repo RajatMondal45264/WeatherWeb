@@ -7,7 +7,7 @@ input.addEventListener("click",()=>{
     const updateReport = (data)=>{
         const element = document.getElementById("weatherinfo");
         const icon = document.getElementById("weatherIcon");
-        element.innerHTML = `
+        element.innerHTML = ` TODAY'S WEATHER
         🌡 Temperature: ${data.current.temp_c} °C <br>
         ☁️ Condition: ${data.current.condition.text}
     `;
