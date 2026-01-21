@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background: linear-gradient( cornflowerblue, rgb(238, 181, 238), rgb(195, 107, 253));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container fix */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* weather card */
+.box{
+    width: 350px;
+    height: 330px;
+    padding: 25px;
+    background: linear-gradient( cornflowerblue, rgb(238, 181, 238), rgb(195, 107, 253));
+    backdrop-filter: blur(25px);
+    border-radius: 15px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* heading */
+.box h1{
+    position: absolute;
+    top: 18px;
+    text-align: center;
+    background: linear-gradient(120deg, rgb(37, 106, 233), rgb(162, 49, 255), #ff2aca);
+    background-clip: text;
+    color: transparent;
+    font-size: 24px;
+}
+
+/* input */
+.box input{
+    height: 40px;
+    width: 80%;
+    padding: 10px 14px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+/* input focus effect */
+.box input:focus{
+    box-shadow: 0 0 0 2px cornflowerblue;
+}
+
+/* button */
+.box button{
+    width: 120px;
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(120deg, cornflowerblue, rgb(138, 73, 243));
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* hover effect */
+.box button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* click effect */
+.box button:active{
+    transform: scale(0.96);
+}
+.box p{
+    margin-top: 20px;
+    font-weight: 500;
+    color: rgba(1, 28, 39, 0.856);
+}
