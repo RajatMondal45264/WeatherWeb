@@ -14,10 +14,10 @@ input.addEventListener("click",()=>{
         icon.src = "https:" + data.current.condition.icon;
 
     }
+    // Fixing a Bug
+    const promises = fetch(`https://api.weatherapi.com/v1/current.json?key=62bbb6d1d1d84fe08dc180955261301&q=${place}&aqi=yes`);
 
-    const prom = fetch(`https://api.weatherapi.com/v1/current.json?key=62bbb6d1d1d84fe08dc180955261301&q=${place}&aqi=yes`);
-
-    prom
+    promises
     .then((res)=>{
         return res.json();
     }).then((data)=> updateReport(data));
